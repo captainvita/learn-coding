@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jQuary Tab-Panels</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="tab-panels">
+    <ul class="tabs">
+      <li rel="panel1" class="active">panel1</li>
+      <li rel="panel2" class="">panel2</li>
+      <li rel="panel3" class="">panel3</li>
+      <li rel="panel4" class="">panel4</li>
+    </ul>
+    <div id="panel1" class="panel active"></div>
+    <div id="panel2" class="panel"></div>
+    <div id="panel3" class="panel"></div>
+    <div id="panel4" class="panel"></div>
+  </div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+
+$(function() {
+  $('.tab-panels .tabs li').on('click', function() {
+    $('.tab-panels .tabs li.active').removeClass('active');
+    $(this).addClass('active');
+
+    //what panel to show
+    var panelToShow = $(this).attr('rel');
+
+    //hide current panel
+    $('.tab-panels .panel.active').slideUp(300, function() {
+      $(this).removeClass('active');
+      //show new panel
+      $('#' + panelToShow).slideDown(300, function() {
+        $(this).addClass('active');
+      });
+    });
+  });
+});
+
+</script>
+</body>
+</html>

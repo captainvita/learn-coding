@@ -1,0 +1,64 @@
+body {
+	background-color: #EEE;
+}
+.header {
+	z-index: 1;
+	width: 100%;
+	height: 40px;
+	background-color: #999;
+	position: fixed;
+	top: 0;
+	display: block;
+	border-bottom: 1px solid #777;
+}
+
+.body {
+	z-index: 0;
+	width: 100%;
+	min-height: 400px;
+	background-color: #FFF;
+	position: absolute;
+	top: 50px;
+	display: block;
+	overflow: auto;
+}
+.contentFrame {
+	width: auto;
+	height: auto;
+	margin: auto;
+	position: absolute;
+	top:; 0; right: 0; bottom: 0; left: 0;
+}
+.content {
+	width: 220px;
+	min-height: 300px;
+	margin: 48px 15px;
+	padding: 0 25px;
+	background-color: #CCC;
+	position: static;
+	display: inline-block;
+	overflow: auto;
+
+}
+
+.contentHead {
+
+}
+
+.contentBody {
+
+}
+
+.contentFoot {
+
+}
+
+.footer {
+	width: 100%;
+	height: 35px;
+	background-color: #999;
+	position: fixed;
+	bottom: 5px;
+	display: block;
+	border-top: 1px solid #777;
+}

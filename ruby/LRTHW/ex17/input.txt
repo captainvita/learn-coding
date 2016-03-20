@@ -1,0 +1,2 @@
+I will copy this file to another file.
+I hope it will work fine!

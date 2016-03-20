@@ -1,0 +1,31 @@
+body {
+  position: static;
+  width: auto;
+  height: auto;
+  background: purple;
+  padding: 5px 20px;
+}
+
+.big_box {
+  position: static;
+  display: block;
+  background: pink;
+  border: 2px solid gray;
+  width: 620px;
+  min-height: 200px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.small_box {
+  position: static;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  padding: 4px;
+  background: white;
+  border: 1px solid gray;
+  border-radius: 25%;
+}

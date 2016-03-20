@@ -1,0 +1,1 @@
+puts "Addition: #{2 + 3}" #Simple addition of two
