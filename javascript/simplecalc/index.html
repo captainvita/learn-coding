@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="wraper">
+  <div class="head">
+    <h2>Simple JS Calculator</h2>
+    <p>Just basic math with two positive numbers possible.</p><br>
+  </div>
+  <div class="menu">
+      <input type="radio" id="plus" value="+" checked> Addition
+      <input type="radio" id="minus" value="-"> Subtraction
+      <input type="radio" id="multi" value="*"> Multiplication<br>
+      <input type="radio" id="div" value="/"> Division
+      <input type="radio" id="mod" value="%"> Modulo
+      <input type="radio" id="nthEx" value="^"> nth Exponent<br>
+      <input type="radio" id="nthRo" value="root"> Nth Root
+  </div>
+  <div class="numbers">
+    <form class="input" action="index.html">
+      1th number: <input type="number" id="number1" value="0">
+      2nd number: <input type="number" id="number2" value="0">
+    </form>
+    <div class="result">
+      Result: <input id="result"">
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="js/calc.js"></script>
+</body>
+</html>
